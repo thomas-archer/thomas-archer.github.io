@@ -1,33 +1,33 @@
-<div id=footer>
-  <div class=row>
-    <div class=container>
-      <div class="center span4">
-        <img alt=profile src=img/avatar-2.jpg style="max-width: 130px;border-radius: 50%;border: 2px solid white;">
-        <div class=details>
-          <a href=mailto:tarcher@scu.edu class=details-small>Contact Me</a>
+<section class="contact-us-section">
+  <div class="row medium-unstack">
+    <div class="columns contact-us-section-left">
+      <h1 class="contact-us-header">Get In Touch</h1>
+      <div class="responsive-embed">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=campbell&zoom=13&scale=false&size=600x300&maptype=roadmap&sensor=false&format=png&visual_refresh=true" alt="Google Map of campbell" alt="" />
+      </div>
+
+      <ul class="contact-us-list">
+        <li class="address">100 W Rincon Ave, Campbell CA 95008</li>
+        <li class="email"><a href="mailto:">hello@yeticave.com</a></li>
+        <li class="phone">
+          1 (408) 445 9978
+        </li>
+      </ul>
+    </div>
+    <div class="columns contact-us-section-right">
+      <h1 class="contact-us-header">Mail Us</h1>
+      <form class="contact-us-form">
+        <input type="text" placeholder="Full name">
+        <input type="email" placeholder="Email">
+        <textarea name="message" id="" rows="12" placeholder="Type your message here"></textarea>
+        <div class="contact-us-form-actions">
+          <input type="submit" class="button" value="Send it" />
+          <div>
+            <label for="FileUpload" class="button contact-us-file-button">Attach Files</label>
+            <input type="file" id="FileUpload" class="show-for-sr">
+          </div>
         </div>
-        <div id=social>
-          <a href=http://github.com/thomas-archer target=_blank><span class=icon-github></span></a>
-          <a href=http://linkedin.com target=_blank>
-          <span class=icon-linkedin></span></a>
-            <a href=mailto:tarcher@scu.edu><span class=icon-email>
-          </span></a></div></div>
-      <div class=span8 id=contact>
-        <form action=mailer.php id=contact-form method=post name=contact-form>
-          <div class=buffer-bottom><input type=text name=name placeholder=Name required id=field1> 
-            <input type=email name=email placeholder=Email required> 
-            <input type=text name=phone placeholder=Phone required>
-          </div>
-          <div class=buffer-bottom>
-            <textarea class=message name=message placeholder=Message required rows=6>
-            </textarea>
-          </div>
-          <span id=submit-response></span>
-          <div class=pull-right>
-            <input type=submit class=button value=send>
-           </div>
-         </form>
-       </div>
-     </div>
-   </div>
- </div>
+      </form>
+    </div>
+  </div>
+</section>
